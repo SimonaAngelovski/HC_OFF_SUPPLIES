@@ -17,12 +17,14 @@
     "@sap/cds-dk": "^7"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds run"
   },
   "cds": {
     "requires": {
-      "auth": "xsuaa",
-      "db": "hana"
+
+      "db": {
+        "kind": "sql"
+      }
     }
   }
 }
