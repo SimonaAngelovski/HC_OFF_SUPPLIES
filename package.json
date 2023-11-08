@@ -25,6 +25,9 @@
     },
     "requires": {
 
+      "auth": {
+        "kind": "basic-auth"
+      },
       "db": {
         "kind": "hana"
       }
