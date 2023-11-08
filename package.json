@@ -18,10 +18,12 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1",
     "@sap/cds-dk": "^7",
-    "@sap/hdi-deploy": "4.8.2"
+    "@sap/hdi-deploy": "4.8.2",
+    "@sap/ux-specification": "^1.108.17"
   },
   "scripts": {
-    "start": "cds run"
+    "start": "cds run",
+    "watch-fiori-products": "cds watch --open fiori-products/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "hana": {
@@ -35,5 +37,8 @@
         "kind": "hana"
       }
     }
-  }
+  },
+  "sapux": [
+    "app/fiori-products"
+  ]
 }
